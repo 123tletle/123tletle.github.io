@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="https://github.com/necolas/normalize.css/blob/master/normalize.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="main-background">
+        <div class="main-container">
+            <div class="main-text">
+                <h1>Landing Page for Apps</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br> Voluptatum, rem, distinctio! Dolores doloremque.
+                </p>
+                <!-- 클래스명 + 스페이스바 + 새클래스명은
+                부보클래스명 생성 후에 자식클래스명을 의미함-->
+                <button class="btn btn-black">Show More</button>
+            </div>
+            <img src="/img/iphone.png" class="main-iphone" alt="">
+        </div>
+    </div>
+
+    <div class="side-box">
+        <h4>It is the perfect theme for your next Project!</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <button class="btn btn-black">Show Portfolio</button>
+    </div>
+
+    <div class="service">
+        <div class="main-container">
+                <h4 style="margin-top: 0;">What We Offer</h4>
+            <div class="service-items">
+                <div>
+                    <!-- 아이콘에 세부디테일 적용시 사이즈뒤에
+                    클래스명(service-icon)을 추가함 -->
+                    <i class="fas fa-mobile-alt fa-4x service-icon"></i>
+                    <h5>Responsive</h5>
+                    <p>lorem ipsum I love coding</p>
+                </div>
+                <div>
+                    <i class="fas fa-flask fa-4x service-icon"></i>
+                    <h5>Experiments</h5>
+                    <p>lorem ipsum I love coding</p>
+                </div>
+                <div>
+                    <i class="fas fa-bolt fa-4x service-icon"></i>
+                    <h5>Quickness</h5>
+                    <p>lorem ipsum I love coding</p>
+                </div>
+                <div>
+                    <i class="fas fa-globe-americas fa-4x service-icon"></i>
+                    <h5>Global Shippping</h5>
+                    <p>lorem ipsum I love coding</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <small>Portfolio</small>
+        <h4> What we can DO!</h4>
+        <div class="portfolio-container">
+
+            <div class="portfolio-item1">
+                <!-- 부모 클래스디브 CSS에 position: relative; float: left; 
+                부모위치 잡고,플로트로 왼쪽부터 정렬함 -->
+
+                <div class="white-box"></div>
+                <!-- 부모클래스밑에 자식의 디브박스 꼭 생성함,
+              자식 위치설정하려면position: absolute; 의미없는 디브 반드시 생성 -->
+                <div class="portfolio-text">
+                    <h4>Staionnary</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item1" style="background-image: url(/img/portfolio-2.jpg);">
+
+                <div class="white-box"></div>
+                <div class="portfolio-text">
+                    <h4>Staionnary</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item1" style="background-image: url(/img/portfolio-3.jpg);">
+                <div class="white-box"></div>
+                <div class="portfolio-text">
+                    <h4>Staionnary</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item1" style="background-image: url(/img/portfolio-4.jpg);">
+                <div class="white-box"></div>
+                <div class="portfolio-text">
+                    <h4>Staionnary</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,585 @@
+@font-face {
+    font-family: '이쁜폰트';
+    src: url(../font/NanumSquareR.woff);
+}
+
+
+div,
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-weight: 500;
+
+}
+
+/* 마진 0은 여백을 없애줌,노멀라이즈씨에스, */
+
+p,
+h4,
+h3,
+h2,
+h1,
+span,
+button {
+    transform: rotate(0.03deg);
+}
+
+html {
+    line-height: 1.15;
+}
+
+/* 기본 행간 높이 */
+table {
+    border-collapse: collapse;
+    border-radius: 7px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #c2d3de;
+}
+
+.profile {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile1 {
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: royalblue;
+    text-align: center
+}
+
+.box {
+    width: 200px;
+    background-color: paleturquoise;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    box-shadow: 3px 3px 5px gray;
+}
+
+.container {
+    width: 800px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right {
+    width: 80%;
+    height: 400px;
+    background-color: coral;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+.container1 {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-content {
+    width: 80%;
+    height: 200px;
+    float: left;
+}
+
+.blog-img {
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.blog-profile {
+    width: 50px;
+    float: left;
+    display: block;
+}
+
+.blog-title {
+    margin: 5px auto 20px auto
+}
+
+.blog-name {
+    float: left;
+}
+
+/* 공백은 안에있는 모든자식의미함, >괄호는 안에있는 직계자식만 선택하는 셀렉터 문법 */
+.navbar li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/*  text-decoration: none; 클릭 후에 표시 밑줄 사라짐 */
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:visited {
+    color: black
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* ../상위폴더에서 이미지 가져오기,
+    이미지반복중단은 백그라운드 노리피트,
+    이미지사이즈 커버로 하면 자동크기조절,
+    백그라운드 포지션 센터하면 가운데 맞춤,
+    attachment 이미지 고정됨,
+     */
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* 마진충돌생기면 부모박스에 패딩1px주면 사라짐 */
+.main-content {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+    font-family: sans-serif;
+}
+
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* 부모가 가진 position: relative;는 자식이 앱솔루트로 부모기준으로 위치를 지정할수있음 */
+.side-background {
+    width: 80%;
+    max-width: 600px;
+    background-color: #eee;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: -40px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+/* 디브박스위에 겹치게 할때는 포지션릴레티브로 위치선정하고
+ zindex로 순서 정해주기, width:80% 부모의 화면폭을 기준으로함, 
+ 반응형레이아웃에 사용함,width: 80%; 
+ max-width: 600px;2개 같이 사용 추천함 너무 크지않게 크기고정함,*/
+
+.side-title {
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.side-content {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/* width는 박스 크기가 아니라 내용,컨텐트안에 사이즈를 말함,
+  box-sizing: border-box; 보더박스를해야 박스자체 위드스 설정 고정함 */
+/* input[type=text]{
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+border-radius: 5px;  
+} */
+.contact-black {
+    width: auto;
+    margin: auto;
+    background-color: black;
+    padding: 30px;
+}
+
+.contact-white {
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* margin: auto; 정렬이 한쪽으로 치우쳐져 있을떄 사용,가운데 정렬됨*/
+.w-100 {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    margin: auto;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-input-form-long {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* border: yellow; 버튼박스 가방 바깥쪽 겉라인의 색상 지정가능 */
+
+.yellow-button {
+    width: 40%;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-top: 0;
+    border: yellow;
+    border-radius: 5px;
+    background-color: wheat;
+}
+
+/* 보더레디우스가 안되면 위에처럼 하면됨 */
+
+/* 테이블 간격없애는것은 보더콜랩스 */
+/* <span style="vertical-align: top;"> 글씨에 상하주앙 배치, 버티컬얼라인,
+인라인과 인라인블록요소만 사용가능함,인라인이란 폭과 너비가 없는 옆으로만 채워지는요소,
+<span>대표적,
+<tr>은 행 <td>열,항상 행먼저 담에 열, 행렬 */
+
+.cart-background {
+
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    background-color: #c2d3de;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Cart-table {
+    width: 100%;
+    max-width: 700px;
+    /* 맥스위드스 설정해주면 최대이상 안커지고,반응형레이아웃 됨,
+    마진오토는 가운데 정렬됨 */
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.Cart-table-item {
+    width: 700px;
+}
+
+.Cart-table td,
+.Cart-table th {
+    padding: 15px;
+    border-top: 1px solid #c2d3de;
+    border-bottom: 1px solid #c2d3de;
+}
+
+.Cart-table th:nth-child(2) {
+    width: 400px;
+    text-align: center;
+}
+
+/* 클래스명 요소의 엔스차일드하면 따로 새클래스명 작성할거없이
+    몇번째 요소의 속성들을 수정가능함 */
+
+.img-size {
+    width: 100px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    background-position: center
+}
+
+.Cart-table-content {
+    vertical-align: middle;
+}
+
+.left-part {
+    text-decoration: underline;
+    color: navy;
+}
+
+/* 링크클릭 후에 컬러변경 수도클래스
+ .left-part:link{} 누르기전
+ .left-part:visted{} 누른 후에
+ */
+
+.right-button {
+    width: auto;
+    margin: 0;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: azure;
+    background-color: navy;
+}
+
+/* 마우스 클릭관련 수도클래스, 순서는 호파 */
+.right-button:hover {
+    background-color: chocolate;
+}
+
+.right-button:active {
+    background-color: brown;
+}
+
+.right-button:focus {
+    background-color: gray;
+}
+
+/* 인풋이나 앵커 태그에 포커스로 다양한 적용가능
+<input class="input-test">
+.input-test{font-size: 20px;}
+.input-test:focus{border: 2px solid red;} */
+
+/* BEM
+class="클래스명__역할--세부특징 */
+
+.nav-container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+    background-color: coral;
+    font-size: 22px;
+    font-weight: 800;
+    color: #eee
+}
+
+/*  Div는 한줄의 블락을 다차지함,그래서 
+기본 배치가 박스당 가로 전체 한칸씩만 박스존재해서
+세칸의 박스가 생김,
+박스3개를 연달아서 가로로 옆으로 배치 하고프면 
+부모클래스의 display:flex 적용
+박스들을 가운데 정렬하고프면 
+justify-content: center; ,
+박스들을 세로로 배치하고프면
+ flex-direction: column;
+가로폭이 넘치면 요소가 밑으로 흘러서 
+넘치게 배치하고프면 flex-wrap: wrap;,
+상하정렬은 align-items: center;
+박스크기 비율로 설정: style="flex-grow:1" 적용,
+숫자에따라서 1~10배크기로 조정가능함
+*/
+
+.nav-item {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.product-container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+/* 밑에는 자식의 디브요소 선택,셀렉터 */
+.product-container div {
+    float: left;
+    width: 25%;
+    text-align: center;
+
+}
+
+.product-container i {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 20px;
+
+}
+
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+
+/* 디스플레이:플렉스는 박스들을 가로로 다 오도록 정렬함 ,
+원래는 박스 한개당 한줄씩 차지함*/
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.shop-item {
+    width: 33%;
+    padding: 10px;
+}
+
+.shop-item img {
+    width: 100%;
+    display: block;
+    /* 이미지밑에 보이지않는 선이 있어서 
+    이미지랑 딱떨어지게 박스 겹치려면 블록하면됨 */
+}
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* 애니메이션 시작전에 먼저 포지션 위지 정해주기,
+반만 차오르게 하려면 오버플로우히든 하면 반만보이고 나머지 숨김 */
+
+.overlay-wrap:hover .overlay-black {
+
+    margin-top: 50%;
+}
+
+/* 마우스호버 적용시 애니메이션 트리거 */
+
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 100%;
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+}
+
+/* 애니메이션은 트래지션, 시작 */
+
+.overlay-black>p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+/* div.concon>div 탭키: 콘콘클래스명 가진 2개의 디브박스 자동생성됨,
+div#idddd>p.title*3 탭키: 디브박스의 id를 가진 iddd명인 
+<p>태그의 클래스명이 타이틀인 3개의 <P>박스 자동생성,
+CSS작성시 m10 탭: margin:10px 자동생성,
+ w100% tab은 위드스100%, mt10 tab은 마진탑 10픽셀,
+ ! 입력후 탭하면 html자동문서 생성,
+ lorem 탭은 임시글자 생성됨, 
+ <P> 태그나 디브등, p,div 입력 탭하면 자동생성됨  */
+
+@media screen and (max-width:1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .product-container>div {
+        width: 50%;
+    }
+
+    .product-container {
+        max-width: 600px;
+    }
+
+
+    @media screen and (max-width:768px) {
+        .main-title {
+            font-size: 20px;
+        }
+
+        .nav-container {
+            font-size: 20px;
+        }
+
+        .product-container>div {
+            width: 100%;
+        }
+
+        .overlay-black>p {
+            font-size: 15px;
+
+        }
+    }
+
+    /* 1200은 태블릿,768은 모바일 권장,브레이크포인트 */

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>sns-profile</title>
+    <!-- 헤드태그안에 스타일태그로 클래스지정해서 
+    css사용않고 디자인 수정가능함 -->
+    <style>
+        .white-box-sns {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0.5px 0.5px 2px 1px #eee;
+        }
+
+        /* 미리 클래스 설정해서 사용하면 편함, 
+        둥근박스생성함 */
+        .pill {
+            display: inline-block;
+            border: 1px solid lightgray;
+            border-radius: 100px;
+            padding: 3px 12px 5px 12px;
+            margin-right: 2px;
+            margin-bottom: 5px;
+        }
+    </style>
+
+
+</head>
+
+<!-- 회색배경흰박는 바디태그안에 색 지정함 -->
+
+<body style="background-color: #f7f9fc;">
+    <!-- css에 컨테이너흰박스 클래스명 생성함 -->
+    <div class="container white-box-sns">
+
+        <div class="row">
+
+            <div class="col-md-7">
+
+                <div class="d-flex">
+                    <div class="flex-shrink-0">
+                        <img src="/img/profile-pic.png" alt="...">
+                    </div>
+
+                    <div class="flex-grow-1 ms-3 py-2">
+                        <h3 class="mb-0">Killian Sven<h3>
+                                <p class="mb-2 width">Front-end Designer</p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg> 서울 마포구</p>
+                                <button type="button" class="btn btn-primary">연락하기</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+
+
+            <!-- <div class="col-md2">
+                <div class="vr" style="width: 0.1em;"></div>
+            </div> -->
+            <!-- <div class="d-flex" style="height: 200px;">
+                <div class="vr"></div>
+              </div> -->
+
+            <div class="col-md-3 mt-4 mt-md-1" style="font-size: 16px;">
+
+                <div class="row">
+                    <div class="col-6">
+                        <p>Location</p>
+                    </div>
+                    <div class="col-6">
+                        <p>서울 마포구</p>
+                    </div>
+                    <div class="col-6">
+                        <p>Age</p>
+                    </div>
+                    <div class="col-6">
+                        <p>90년생</p>
+                    </div>
+                    <div class="col-6">
+                        <p>Experience</p>
+                    </div>
+                    <div class="col-6">
+                        <p>신입</p>
+                    </div>
+                    <div class="col-6">
+                        <p>Shcool</p>
+                    </div>
+                    <div class="col-6">
+                        <p>천조국대 토목학과</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pro-div" style="margin-top: 15px; border-bottom:gray;">
+                <p class="container pro-div1" style="border-bottom: aquamarine;">Profile</p>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-3 p-5">
+                    <div class="whitebox-sns">
+                        <h4>Works</h4>
+                        <p>Landinf page design Flyer desgin Vue.js to-do app Shopping page design</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 p-5">
+                    <div class="whitebox-sns">
+                        <h4>About</h4>
+                        <p>I am a front-end desginer who is excellent at Bootstrap ,Sass, Foundation
+                            I have dealt lots if in-house design works and outsource things. If
+                            you want to check my portfolio,please visit Killiansevev.com
+                        </p>
+                        <hr>
+                        <!-- hr은 수평선생김 -->
+                        <h4>Skills</h4>
+                        <span class="pill">HTML5</span>
+                        <span class="pill">CSS3</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">Illustrator</span>
+                        <span class="pill">Photoshop</span>
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 p-2 mt-3 " style="  text-align: center;">
+                    <div class="whitebox-sns">
+                        <div class="card" style="width: 18rem; display: flex;">
+
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-balloon-fill " viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.244-.487ZM4.352 3.356a4.004 4.004 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5c0 .276-.226.496-.498.542-.95.162-1.749.78-2.173 1.617a.595.595 0 0 1-.52.341c-.346 0-.599-.329-.457-.644Z" />
+                                </svg>
+                                <!-- <h5 class="card-title">Card title</h5> -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Sign Up</a>
+                                <br>
+                                <a href="#" style="color: aquamarine;">Already a member?</a>
+                            </div>
+                        </div>
+
+
+
+                   <progress value="0.5"></progress>
+                        <!-- 버튼에 색을 주거나 할때 인풋으로 스타일줄수있음ㅡ섀도우돔 -->
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

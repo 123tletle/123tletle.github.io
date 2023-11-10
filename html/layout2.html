@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css\main.css" rel="stylesheet">
+    <link href="https://github.com/necolas/normalize.css/blob/master/normalize.css ">
+    <meta name="viewport" content="width=device-width,ininial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+
+
+<body>
+
+    <nav class="nav-container">
+        <div class="nav-item">ShooShop</div>
+        <div style="flex-grow: 1;"></div>
+        <div class="nav-item">products</div>
+        <div class="nav-item">service</div>
+        <div class="nav-item">log-in</div>
+    </nav>
+
+
+
+    <div class="main-background">
+        <h4 class="main-title">Buy our fancy shoes! Now On Sale</h4>
+        <p class="main-content">Lorem ipsum dolor sit ament, consectetur adipisicing elit. Nesciunt a consectetur
+            molestiae dolorem tempore eaque culpa volutas odio in obcaecati.</p>
+        <button class="main-button">BUY</button>
+    </div>
+    <div class="side-background">
+        <div class="side-title">
+            <h5>How we design our shoes</h6>
+        </div>
+        <div class="side-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eius, doloremque accusantium, saepe
+                inventore illo necessitatibus cum eligendi ad sint molestias.</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- <form>
+    <input type="text" class="text-input" name="" id="">
+    <input type="email" placeholder="abc@mail.com" name="" id="">
+    <input type="date" name="" id="">
+    <input type="radio" name="" id="">
+        <button type="submit">Send</button>
+    <select>
+        <option>aaa</option>
+        <option>bbb</option>
+        <option>ccc</option>
+    </select>
+</form> -->
+    <div class="product-container">
+
+        <div>
+            <i class="fas fa-shopping-cart fa-3x"></i>
+            <h4>Fast Shipping</h4>
+            <p>We ship faster than other shops</p>
+        </div>
+        <div>
+            <i class="fas fa-globe-asia fa-3x"></i>
+            <h4>Good service</h4>
+            <p>Expect a life long service</p>
+        </div>
+        <div>
+            <i class="fas fa-ticket-alt fa-3x"></i>
+            <h4>Free Coupons</h4>
+            <p>With new welcome gifts</p>
+        </div>
+        <div>
+            <i class="fas fa-tshirt fa-3x"></i>
+            <h4>New Product</h4>
+            <p>See monthly new products</p>
+        </div>
+        <div style="float: none; clear: both;"></div>
+    </div>
+    <!-- 플로트요소 사용뒤에는 반드시 마지막에 디브추가 클리어보스해야함,
+    한쪽치우치면  플로트:논 적용하면 제대로 동작-->
+
+    <div class="shop-bg">
+        <div class="shop-container">
+
+            <div class="shop-item">
+                <div style="position: relative;">
+                    <div class="overlay-wrap">
+
+                        <div class="overlay-black">
+                            <p>$60</p>
+                            <p>Hot Sale</p>
+                        </div>
+                    </div>
+
+                    <img src="img/product1-1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="shop-item">
+                <div><img src="img/product2.jpg" alt=""></div>
+            </div>
+
+            <div class="shop-item">
+                <div><img src="img/product3.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=" contact-black">
+        <div class="contact-white">
+            <form>
+                <div class="w-100">
+                    <h3>Contact Us</h3>
+                    <p>Your Email</p>
+                    <input class="form-input" type="email" placeholder="abc@example.com">
+                </div>
+
+                <div class="w-50">
+                    <p>First Name</p>
+                    <input class="form-input" type="text">
+                </div>
+
+                <div class="w-50">
+                    <p>Last Name</p>
+                    <input class="form-input" type="text">
+                </div>
+                <div style="clear: both;"></div>
+                <!-- <div style="clear: both;"></div> float:left하고서
+반드시 클리어보스 해줘야함 -->
+
+                <div class="w-100">
+                    <p>Message</p>
+                    <textarea class="form-input-form-long"></textarea>
+                </div>
+                <div>
+                    <input id="sub" type="checkbox">
+                    <label for="sub">Subscribe</label>
+                    <button class="yellow-button">SEND</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
